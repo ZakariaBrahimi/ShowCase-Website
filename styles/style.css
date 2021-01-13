@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+body {
+  background-color: #CCCCCC;
+}
+
+.container {
+  margin: 4vh 5vw;
+  display: -ms-grid;
+  display: grid;
+  color: #333333;
+}
+
+.container header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 3% 32% 32% 23%;
+      grid-template-rows: 3% 32% 32% 23%;
+  gap: 1.5vw;
+}
+
+.container header nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/span 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/span 1;
+}
+
+.container header nav ul {
+  list-style: none;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: larger;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: .8vw 8.2vw;
+  background-color: #DDDDDD;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.container header nav ul li a:hover {
+  color: white;
+  background-color: #333333;
+}
+
+.container header .webPresence {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/span 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/span 2;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  padding: 15vw 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-image: url(https://image.ibb.co/kYJK8x/showcase.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container header .webPresence h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container header .webPresence p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.container header .webPresence button {
+  color: white;
+  background-color: #333333;
+  border: none;
+  padding: .8vw 1.8vw;
+}
+
+.container header .membership {
+  background-color: #DDDDDD;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header .membership h3 {
+  margin-bottom: 4rem;
+}
+
+.container header .membership button {
+  color: white;
+  background-color: #333333;
+  border: none;
+  padding: .8vw 1.8vw;
+  margin-top: 2rem;
+}
+
+.container header .service {
+  background-color: #DDDDDD;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+  padding: 5rem;
+}
+
+.container header .service i {
+  font-size: 3.8rem;
+}
+
+.container header .service h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.container header .service p {
+  text-align: center;
+  font-size: 1.08rem;
+}
+
+.container .yourBusiness {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.5rem;
+  padding: 3rem;
+  background-color: #DDDDDD;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  margin-bottom: 3rem;
+}
+
+.container .yourBusiness img {
+  width: 100%;
+  margin-left: 0.8rem;
+}
+
+.container .yourBusiness .main h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 1.5rem 0rem;
+}
+
+.container .yourBusiness .main p {
+  font-size: 1.09rem;
+}
+
+.container .yourBusiness .main button {
+  color: white;
+  background-color: #333333;
+  border: none;
+  padding: .8vw 1.8vw;
+  margin-top: 2rem;
+}
+
+.container .showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .showcase img {
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.container footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+  padding: 1.8rem 0rem;
+  color: white;
+  margin-top: 4rem;
+}
+
+.container footer h5 {
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
